@@ -1,3 +1,4 @@
+// ******************** CONVERSION *********************
 // 01. Number to string => Have to use specific classes in which we have to convert a given value, It is same like wrapper classes in Java but here it used differently.
 
 let age = 30;
@@ -22,3 +23,23 @@ console.log(isSignedIn);
 let convertedSignedInValue = Number(isSignedIn);
 console.log(convertedSignedInValue);
 console.log("Now the type of convertedSignedInValue is: " + typeof(convertedSignedInValue))
+
+
+// ******************** OPERATIONS *********************
+// Operations inlcude all the basic arithmetic operations we perform same as in any other programming languages.
+
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 / 2);
+console.log(2 % 3);
+
+console.log("2" * 4); // Here js implicitly convert string "2" in number.
+
+console.log(2 + 2 + "5"); // Here js will follow operator association from left to right.
+
+console.log("2" + 2 + 5); // Output would be 225, because again association rule. 😊
+
+console.log(true + 1); // Output will be 2 becuase JS first convert boolean value "true" in 1 and then add it with another 1.
+
+console.log(true + "1") // Output would be true1 becuase now we JS will treat true and 1 as string. 😁😁
