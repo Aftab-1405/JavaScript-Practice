@@ -20,10 +20,3 @@ console.log(`The min value is ${Math.min(1,2,3,4,5)}`);
 console.log(Math.floor(12.56));
 console.log(Math.ceil(12.56));
 console.log(Math.floor((Math.random() * 10) + 1));
- 
-
-
-
-
-
-
