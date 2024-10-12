@@ -41,3 +41,33 @@ console.log("Performing splice operation on newArray: " + newArray.splice(1, 3))
 
 console.log("After performing splice operation, the changes happen to newArray(original): " + newArray); 
 // Output: After performing splice operation, the changes happen to newArray(original): 1
+
+
+
+// Spread operator in js (...arrayName) => This operator would be used to merge 'n' arrays into single array.
+
+// Individual arrays
+const tropicalFruits = ['Mango', 'Pineapple', 'Papaya'];
+const berries = ['Strawberry', 'Blueberry', 'Raspberry'];
+const citrusFruits = ['Orange', 'Lemon', 'Lime'];
+
+// Merging arrays using the spread operator
+const allFruits = [...tropicalFruits, ...berries, ...citrusFruits];
+
+console.log(allFruits);
+
+// Merging arrays using the + operator
+const array1 = [1, 2];
+const array2 = [3, 4];
+
+const result01 = array1 + array2; // Using + operator
+
+console.log(result01);
+
+// Merging arrays using the concat method
+const array3 = [1, 2];
+const array4 = [3, 4];
+
+const result02 = array1.concat(array2); // Using concat() method
+
+console.log(result02);
