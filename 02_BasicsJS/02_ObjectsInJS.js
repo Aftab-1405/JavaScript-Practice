@@ -54,3 +54,6 @@ let mergedObject = {
 
 console.log(mergedObject);
 // Output: { id: "Aftab", role: "Software Engineer", companyName: "Quality Kiosk", contact: 7757875327 }
+
+const {companyName: company} = mergedObject;
+console.log("This is the result of object de-structuring: " + company); // Outputs the value of "companyName" from mergedObject
