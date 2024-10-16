@@ -1,4 +1,4 @@
-// ** What is hoisting? It is a feature of JS, which allows us to call or user functions and variables even before initializing them. Note : Only the declarations are hoisted, not the initializations.
+// ** What is hoisting? Hoisting is JavaScript's default behavior of moving declarations to the top of their containing scope during the compilation phase. However, only the declarations are hoisted, not the initializations. The behavior of hoisting varies depending on how variables and functions are declared. Note : Only the declarations are hoisted, not the initializations.
 
 console.log(age);
 
