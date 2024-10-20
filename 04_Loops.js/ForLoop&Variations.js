@@ -29,7 +29,6 @@ for (const key in bolyActress) {
 }
 
 
-
 const libraryBooks = [
     {
         title: "The Great Gatsby",
@@ -59,5 +58,6 @@ const libraryBooks = [
 
 
 for (const element of libraryBooks) {
-    console.log(element["title"]);      
-}
+    console.log(element["title"]); // Recommend way to access the data from objects.
+    // console.log(element.title); // / General way to access the data from objects.    
+} 
