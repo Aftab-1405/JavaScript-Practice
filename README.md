@@ -2,8 +2,7 @@
 Learning a JavaScript again and practicing it for an Interview.
 
 ## Project 01 solution: BMI Calculator 
-```
-javascript
+```javascript
 
 <!DOCTYPE html>
 <html lang="en">
@@ -113,4 +112,77 @@ javascript
 </body>
 </html>
 
+```
+## Project 02 solution: Digital Clock
+
+```javascript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #212121;
+            color: white;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            overflow-x: auto;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            border: solid white 2px;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 250px;
+        }
+
+        span{
+            padding: 10px;
+            border: solid red 2px;
+            border-radius: 20px;
+            transition:  0.3s ease-in-out; /* Smooth transition */
+        }
+
+        span:hover {
+    transform: scale(2); /* Scale up on hover */
+}
+    </style>
+</head>
+<body>
+
+    <h1>✨ Watch Time Here ✨</h1>
+
+    <div class="watch">
+        <span></span>
+    </div>
+    
+    <script>
+
+        setInterval(function() {
+            let date = new Date();
+            document.querySelector('.watch span').innerHTML = date.toLocaleTimeString();
+        }, 1000)
+    </script>
+</body>
+</html>
 ```
