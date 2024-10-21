@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning DOM</title>
 </head>
-<body style="background-color: #212121;">
+<body style="background-color: #212121; color: aliceblue;">
     <h1>My name is Affy</h1>
+
+    <form>
+        <label for="inputNum">Enter your lucky num: </label>
+        <input type="text" name="number" id="inputNum">
+        <input type="submit" value="submit">
+    </form>
+
 </body>
 
 <script>
@@ -32,6 +39,16 @@
         div.style.backgroundColor = "grey";
 
         document.body.appendChild(div);
+
+
+        const form = document.querySelector("form");
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+
+            let lucky = document.querySelector('#inputNum').value;
+            document.body.append(lucky);
+        })
+
 
     // Here we can edit the existing element of dom.
 
