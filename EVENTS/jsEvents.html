@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS Events</title>
+</head>
+<body>
+
+    <input type="text" id="takeInput">
+    
+    <script>
+        // This is an input event.
+        document.querySelector("#takeInput").addEventListener("input", (event)=>{
+
+            let val = document.querySelector("#takeInput").value;
+            console.log(val); 
+        })
+
+        const input = document.querySelector("#takeInput");
+
+        input.addEventListener("keypress", logKey, true);
+
+        function logKey(e) {
+        console.log(e.code);
+        }
+    </script>
+</body>
+</html>
